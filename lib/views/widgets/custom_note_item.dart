@@ -1,9 +1,32 @@
 import 'package:flutter/material.dart';
 
 class CustomNoteItem extends StatelessWidget {
-  List notes = [
+  CustomNoteItem({
+    super.key,
+  });
+  final List notes = [
     {
       'title': 'Note 1',
+      'description': 'This is the first note in the notes list for the project',
+      'date': '2022-02-01',
+    },
+    {
+      'title': 'Note 2',
+      'description': 'This is the first note in the notes list for the project',
+      'date': '2022-02-01',
+    },
+    {
+      'title': 'Note 3',
+      'description': 'This is the first note in the notes list for the project',
+      'date': '2022-02-01',
+    },
+    {
+      'title': 'Note 4',
+      'description': 'This is the first note in the notes list for the project',
+      'date': '2022-02-01',
+    },
+    {
+      'title': 'Note 5',
       'description': 'This is the first note in the notes list for the project',
       'date': '2022-02-01',
     },
