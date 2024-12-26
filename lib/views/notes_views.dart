@@ -16,10 +16,10 @@ class NotesViews extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(15)),
             ),
-            isScrollControlled: false,
+            isScrollControlled: true,
             context: context,
             builder: (context) {
-              return addModelButtomSheet();
+              return ModelButtomSheet();
             },
           );
         },
