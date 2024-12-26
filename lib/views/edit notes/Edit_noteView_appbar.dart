@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomAppbar extends StatelessWidget {
-  const CustomAppbar({super.key});
+class EditNoteviewAppbar extends StatelessWidget {
+  const EditNoteviewAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +27,11 @@ class CustomAppbar extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
               ),
               child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 icon: Icon(
-                  Icons.search,
+                  Icons.check,
                   size: 30,
                 ),
                 color: Colors.white,
