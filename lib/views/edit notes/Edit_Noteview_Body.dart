@@ -10,12 +10,10 @@ class EditNoteviewBody extends StatelessWidget {
       children: [
         CustomTextfield(
           hint: 'title',
-          focusNode: FocusNode(),
         ),
         CustomTextfield(
           hint: 'title',
           maxlines: 5,
-          focusNode: FocusNode(),
         ),
       ],
     );

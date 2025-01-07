@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomElvbuttom extends StatelessWidget {
-  const CustomElvbuttom({super.key});
+  const CustomElvbuttom({super.key, this.onTap});
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +14,7 @@ class CustomElvbuttom extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
           fixedSize: Size(330, 50)),
-      onPressed: () {
-        Navigator.pop(context);
-      },
+      onPressed: onTap,
       child: Text(
         'Save',
         style: TextStyle(
